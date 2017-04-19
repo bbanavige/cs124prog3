@@ -15,7 +15,7 @@ Usage: ./simulate flag dimension outfile
 
 int n_default = 100;
 int max = 1000000000001;
-// int max = 101;
+// int max = 100001;
 
 int main(int argc, char* argv[]) {
 	if (argc != 2 && argc != 3){
