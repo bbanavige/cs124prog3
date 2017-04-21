@@ -1,11 +1,11 @@
 /*
 
-70940507 and 30978137
+70940507 and 60940371
 
-CS124 Coding Assignment 2
+CS124 Coding Assignment 3
 Program for generating random input files
 
-Usage: ./simulate flag dimension outfile
+Usage: ./simulate outfile <n>
 
 */
 #include <time.h>
@@ -39,6 +39,8 @@ int main(int argc, char* argv[]) {
         printf("Error opening file.\n");
         return -2;
     }
+
+    srand(time(NULL)); 
     
     for (int i = 0; i < n; i++) {
         int num = (rand() % max);
